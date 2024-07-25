@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universitas AMIKOM Yogyakarta</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .sidebar {
+            background-color: #da11fb;
+            height: 100vh;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            color: white;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: #c2185b;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .status-icon {
+            font-size: 72px;
+            color: #28a745;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block sidebar">
+                <div class="sidebar-sticky">
+                    <img src="logo.png" class=alt="Universitas AMIKOM Yogyakarta">
+                    <a href="#" class="active">Dashboard</a>
+                    <a href="#">Tambah Data</a>
+                    <a href="#">Rekap Nilai</a>
+                </div>
+            </nav>
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 content">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Dashboard</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group mr-2">
+                            <button class="btn btn-sm btn-outline-secondary">Share</button>
+                            <button class="btn btn-sm btn-outline-secondary">Export</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>QR Dosen</h5>
+                        <div class="border p-3">
+                            <!-- Tempatkan gambar QR di sini -->
+                            <div style="height: 300px; background-color: #e9ecef;"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Status Dosen</h5>
+                        <div class="border p-3 text-center">
+                            <div class="status-icon">&check;</div>
+                            <div style="height: 180px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="mt-4">Jadwal Mengajar Dosen</h5>
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Hari/Tanggal</th>
+                            <th scope="col">Kelas</th>
+                            <th scope="col">Jam</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Senin, 1 Juni 2024</td>
+                            <td>D3TI03</td>
+                            <td>07:00 - 08:40</td>
+                        </tr>
+                        <tr>
+                            <td>Selasa, 2 Juni 2024</td>
+                            <td>D3TI03</td>
+                            <td>08.50 - 10.30</td>
+                        </tr>
+                            <td>Selasa, 2 Juni 2024</td>
+                            <td>D3TI03</td>
+                            <td>13.20 - 15.00</td>
+                    </tbody>
+                </table>
+            </main>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">&copy; 23.01.5001</span>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
